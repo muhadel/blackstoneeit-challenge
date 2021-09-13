@@ -1,6 +1,6 @@
 // pkgs:
 import React, { useState } from 'react';
-import { Box, Text, Button, Grid, GridItem, Tag, Fade, Spinner } from '@chakra-ui/react';
+import { Box, Text, Button, Grid, GridItem, Tag, Fade, Spinner, Link } from '@chakra-ui/react';
 import { AiOutlineBorderlessTable } from 'react-icons/ai';
 
 // utils:
@@ -55,6 +55,10 @@ const ReportBox: React.VFC<ReportBoxPropsTypes> = ({ id, type, state, message })
               </Text>
               {message ? message : <span style={{ color: 'gray', fontWeight: 500 }}>NULL</span>}
             </div>
+            <div className="m-2"  style={{ display: 'flex', lineHeight: 'initial' }}>
+              <Text as='u' color={'blue.500'}><Link href="#">Details</Link></Text>
+            </div>
+
           </GridItem>
           <GridItem colStart={5} colEnd={6} display={'inherit'}>
             <Button
