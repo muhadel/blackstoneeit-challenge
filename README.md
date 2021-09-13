@@ -75,4 +75,6 @@ $ npm run start:prod
 
 ## Swagger Documentation
 
-You can access Swagger documentation via [http://localhost:5000/swagger/](http://localhost:5000/swagger/)
+You can access Swagger documentation via acessing the backend on [http://localhost:5000/swagger/](http://localhost:5000/swagger/)
+![image](https://user-images.githubusercontent.com/32979588/133153792-0ba40f89-ff8a-47bc-9887-ce1b78a8a6ce.png)
+
