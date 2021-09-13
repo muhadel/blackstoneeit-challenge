@@ -1,0 +1,29 @@
+@import '../../../common/styles/utils/_mixins.util'
+@import '../../../common/styles/utils/_colors.util'
+
+header.default-header
+  border-bottom: 1px solid $alt_dark-3
+  .header-wrapper
+    @include flex_positioning(center, center)
+    height: 60px
+    section
+      height: inherit
+      @include flex_positioning(center, center)
+      padding: 0 1rem
+      &.left-wing
+        margin-right: 0.1rem
+        flex-grow: 1
+        justify-content: flex-start
+        .logo
+          height: 100%
+          width: 5rem
+          a
+            display: block
+            height: inherit
+            width: 60px
+            background: url('../../../../public/assets/images/logo192.png') center/cover
+
+      &.right-wing
+        justify-content: flex-end
+        margin-left: 0.1rem
+        flex-grow: 4
