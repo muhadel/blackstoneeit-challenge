@@ -11,7 +11,11 @@ import { HttpExceptionFilter } from './shared/http-exception.filter';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const logger = new Logger('bootstrap');
-  app.enableCors({ origin: config.allowedOrigins });
+  if (config.env === 'development') {
+    app.enableCors({ origin: '*' });
+  }else{
+    app.enableCors({ origin: config.allowedOrigins });
+  }
   app.use(helmet());
   app.use(compression());
   app.useGlobalFilters(new HttpExceptionFilter());
