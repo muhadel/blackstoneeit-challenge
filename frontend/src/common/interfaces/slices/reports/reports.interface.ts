@@ -1,4 +1,3 @@
-import moduleName from 'module'
 export interface StateTypes {
   data: null | IReport[];
   stage: `idle` | `loading` | `fulfilled` | `rejected`;
