@@ -17,7 +17,7 @@ export class ReportController {
   @Put(':reportId')
   @ApiParam({ name: 'id' })
   @ApiOperation({ summary: 'Update report' })
-  updateReport(@Param() { reportId }: FindOneParams,@Body() { ticketState }: UpdateReportReqDTO): any {
+  updateReport(@Param() { reportId }: FindOneParams, @Body() { ticketState }: UpdateReportReqDTO): Promise<IReport> {
     return this.reportService.updateReport(reportId, ticketState);
   }
 }

@@ -2,7 +2,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { IUpdateReportArgs } from '../../../common/interfaces/slices/reports/reports.interface'
 
-const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 
 // Actions
 export const getReports = createAsyncThunk('reports/get-reports', async (_, thunkAPI) => {
