@@ -31,10 +31,10 @@ const reportsSlice = createSlice({
     });
     builder.addCase(getReports.fulfilled, (state, action) => {
       const data: IReport[] = action.payload;
-      const filtedData = data.filter((report) => report.state === EReportState.OPEN);
+      const filteredData = data.filter((report) => report.state === EReportState.OPEN);
       state.reports.stage = 'fulfilled';
       state.reports.isFetching = false;
-      state.reports.data = filtedData;
+      state.reports.data = filteredData;
     });
     builder.addCase(getReports.rejected, (state, action) => {
       state.reports.isFetching = false;
