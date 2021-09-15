@@ -12,7 +12,7 @@
 
 ## Blackstoneeit Challenge
 
-TThis challenge imagines that we have a social media platform that is under attack from spam.
+This challenge imagines that we have a social media platform that is under attack from spam.
 We have implemented a reporting system for users that lets them report spam to the platform, and our spam protection team.
 
 ## Features
