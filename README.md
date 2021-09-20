@@ -8,7 +8,8 @@
    -  [Frontend](#frontend-repo-structure)
 3. [How to Install](#how-to-install)
 4. [Running the app](#running-the-app)
-5. [Swagger Documentation](#swagger-documentation)
+5. [Running by docker-compose](#running-by-docker-compose)
+6. [Swagger Documentation](#swagger-documentation)
 
 ## Blackstoneeit Challenge
 
@@ -72,6 +73,17 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Running by docker compose
+
+```bash
+# Edit your_dockerhost_ip located in frontend/.env.example
+# Edit your_dockerhost_ip located in nginx/default.conf
+# Then run
+docker-compose up --build
+
+```
+
 
 ## Swagger Documentation
 
