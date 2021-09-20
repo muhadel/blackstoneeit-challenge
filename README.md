@@ -77,8 +77,8 @@ $ npm run start:prod
 ## Running by docker compose
 
 ```bash
-# Edit your_dockerhost_ip located in frontend/.env.example
-# Edit your_dockerhost_ip located in nginx/default.conf
+# Step 1: Edit your_dockerhost_ip located in frontend/.env.example
+# Step 2: Edit your_dockerhost_ip located in nginx/default.conf
 # Then run
 docker-compose up --build
 
