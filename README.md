@@ -46,14 +46,12 @@ We have implemented a reporting system for users that lets them report spam to t
 
 ```
 - src/
+   - assets/
    - common/
-      - interfaces/
-      - styles/
    - components/
    - view/
    - redux/
-      - slices/
-          - reports/
+
 ```
 
 ## How to Install
