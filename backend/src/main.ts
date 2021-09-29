@@ -13,12 +13,13 @@ async function bootstrap() {
   const logger = new Logger('bootstrap');
   if (config.env === 'development') {
     app.enableCors({ origin: '*' });
-  }else{
+  } else {
     app.enableCors({ origin: config.allowedOrigins });
   }
   app.use(helmet());
   app.use(compression());
   app.useGlobalFilters(new HttpExceptionFilter());
+  app.setGlobalPrefix('api');
   app.useGlobalPipes(new ValidationPipe({ skipMissingProperties: true }));
   if (config.env === 'development') {
     logger.log(`App running in ${config.env} mode!`);
