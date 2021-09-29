@@ -88,5 +88,6 @@ docker-compose up --build
 ## Swagger Documentation
 
 You can access Swagger documentation via acessing the backend on [http://localhost:5000/swagger/](http://localhost:5000/swagger/)
-![image](https://user-images.githubusercontent.com/32979588/133153792-0ba40f89-ff8a-47bc-9887-ce1b78a8a6ce.png)
+![image](https://user-images.githubusercontent.com/32979588/135359156-c8197bec-578d-4f63-b532-9dc02cf7f6a9.png)
+
 
