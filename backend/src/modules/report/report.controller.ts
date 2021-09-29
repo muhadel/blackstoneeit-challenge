@@ -4,7 +4,7 @@ import { ReportService } from './report.service';
 import { FindOneParams, UpdateReportReqDTO } from './dto';
 import { IReport } from '../../types/report';
 
-@Controller('report')
+@Controller('reports')
 export class ReportController {
   constructor(private readonly reportService: ReportService) {}
 
@@ -17,7 +17,10 @@ export class ReportController {
   @Put(':reportId')
   @ApiParam({ name: 'id' })
   @ApiOperation({ summary: 'Update report' })
-  updateReport(@Param() { reportId }: FindOneParams, @Body() { ticketState }: UpdateReportReqDTO): Promise<IReport> {
+  updateReport(
+    @Param() { reportId }: FindOneParams,
+    @Body() { ticketState }: UpdateReportReqDTO,
+  ): Promise<IReport> {
     return this.reportService.updateReport(reportId, ticketState);
   }
 }

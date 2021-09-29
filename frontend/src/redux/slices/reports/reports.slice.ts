@@ -1,8 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { getReports, updateReport } from './reports.actions';
-import { InitialStateTypes, IReport, EReportState } from '../../../common/interfaces/slices/reports/reports.interface'
-
-
+import {
+  InitialStateTypes,
+  IReport,
+  EReportState,
+} from '../../../common/interfaces/slices/reports/reports.interface';
 
 const initialState: InitialStateTypes = {
   reports: {
@@ -20,7 +22,7 @@ const initialState: InitialStateTypes = {
 };
 
 const reportsSlice = createSlice({
-  name: 'users',
+  name: 'reports',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
